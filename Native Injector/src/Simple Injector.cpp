@@ -1,10 +1,12 @@
 #include <iostream>
 #include <Windows.h>
 #include <string>
+#include <random>
 
 using namespace std;
 
 void findProcId(const char* windowTitle, DWORD& pid) {
+
     GetWindowThreadProcessId(FindWindow(NULL, windowTitle), &pid);
 }
 
@@ -17,9 +19,12 @@ void setConsoleColor(unsigned char color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 
+
 int main() {
-    const string title = "DLL Injector | idkhidden";
-    SetConsoleTitle(title.c_str());
+        
+
+    
+        SetConsoleTitle(TEXT("Dll Injector | idkhiden"));
 
     string text = R"(
         _____  _      _          _____ _   _      _ ______ _____ _______ ____  _____  
@@ -129,12 +134,19 @@ int main() {
     if (procId == 0 || !fileExists(dllName)) {
         setConsoleColor(FOREGROUND_RED);
         cout << "[*] DLL Not Injected" << endl;
-        
+        Sleep(500);
+        cout << "[*] Exiting" << endl;
+        Sleep(1000);
+        exit(0);
     }
     else {
         setConsoleColor(FOREGROUND_GREEN);
         cout << "[*] DLL Injected" << endl;
         Beep(500, 1000);
+        Sleep(500);
+        cout << "[*] Exiting" << endl;
+        Sleep(1000);
+        exit(0);
         
     }
 
