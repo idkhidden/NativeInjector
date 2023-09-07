@@ -32,13 +32,8 @@ string text = R"(
     )";
 
 
-int main() {
-        
-
-    
-        SetConsoleTitle(TEXT("Dll Injector | idkhiden"));
-
-
+int main() {    
+    SetConsoleTitle(TEXT("Dll Injector | idkhiden"));
     cout << text << endl;
 
     cout << "[*] Enter The Process Name: ";
