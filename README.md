@@ -1,6 +1,6 @@
 # Native DLL Injector
 
-Simple Native DLL Injector Made in C++ That Uses LoadLibraryA And VirtualAllocEx.
+Simple Native DLL Injector That Uses LoadLibraryA
 
  # HOW TO USE
 • Disable Anti Virus(False Detects). </br> 
