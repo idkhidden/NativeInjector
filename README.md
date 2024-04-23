@@ -3,7 +3,6 @@
 Simple Native DLL Injector That Uses LoadLibraryA
 
  # HOW TO USE
-• Disable Anti Virus(False Detects). </br> 
 • Make a Folder Put The Exe In The Folder.</br> 
 • Put The Desired DLL In That Folder.</br> 
 • Simply Run The Exe as admin.</br> 
